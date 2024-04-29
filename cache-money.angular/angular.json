@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/cache-money.angular",
+            "outputPath": "~/Downloads/angular/dist/cache-money.angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -96,6 +96,11 @@
           }
         }
       }
+    }
+  },
+  "cli": {
+    "cache": {
+      "path": "D:/AS2-e268d08adc624df7/Downloads/ngcache"
     }
   }
 }

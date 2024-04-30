@@ -1,14 +1,36 @@
-import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-
+import { Component, OnInit } from '@angular/core';
+import { MenuItem } from 'primeng/api';
+import { TabMenuModule } from 'primeng/tabmenu';
 
 @Component({
   selector: 'app-nav-tabs',
   standalone: true,
-  imports: [ ButtonModule ],
+  imports: [TabMenuModule],
   templateUrl: './nav-tabs.component.html',
-  styleUrl: './nav-tabs.component.scss'
+  styleUrl: './nav-tabs.component.scss',
 })
-export class NavTabsComponent {
+export class NavTabsComponent implements OnInit{
 
+  items: MenuItem[];
+
+  constructor() {
+    this.items = [
+      {
+        routerLink: "transactions",
+        label: "Home",
+      },
+      {
+        routerLink: "accounts",
+        label: "Accounts",
+      },
+      {
+        routerLink: "budget",
+        label: "Budget",
+      },
+    ];
+  }
+
+  ngOnInit() {
+
+  }
 }

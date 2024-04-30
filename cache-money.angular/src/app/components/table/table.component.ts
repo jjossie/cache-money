@@ -1,17 +1,9 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TableModule } from 'primeng/table';
+import { Transaction } from '../../models/transaction';
 
-interface Column {
-  field: string;
-  header: string;
-}
 
-export interface Transaction {
-  name: string;
-  amount: number;
-  type: 'deposit' | 'withdrawal'; // Enforces deposit or withdrawal type
-}
 
 @Component({
   selector: 'app-table',

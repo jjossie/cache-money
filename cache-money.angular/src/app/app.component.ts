@@ -6,7 +6,6 @@ import { NavTabsComponent } from './components/nav-tabs/nav-tabs.component';
 import { TableComponent } from './components/table/table.component'
 import { AccountsTableComponent } from './components/accounts-table/accounts-table.component';
 import { BudgetTableComponent } from './components/budget-table/budget-table.component';
-import { Expense } from './components/budget-table/budget-table.component';
 
 @Component({
   selector: 'app-root',
@@ -17,8 +16,4 @@ import { Expense } from './components/budget-table/budget-table.component';
 })
 export class AppComponent {
   title = 'cache-money.angular';
-  expenseList: Expense[] = [{
-    name: "Rent",
-    value: 1200
-  }];
 }

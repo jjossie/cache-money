@@ -1,11 +1,9 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TableModule } from 'primeng/table';
+import { Expense } from '../../models/expense';
 
-export interface Expense {
-  name: string;
-  value: number;
-}
+
 
 @Component({
   selector: 'app-budget-table',

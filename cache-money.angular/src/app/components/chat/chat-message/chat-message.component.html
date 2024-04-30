@@ -1,0 +1,12 @@
+<div *ngIf="sent" class="cm-chat-message cm-chat-message-sent">
+  <p-card styleClass="m-2">
+    <p class="m-0">{{text}}</p>
+  </p-card>
+</div>
+
+<div *ngIf="!sent" class="cm-chat-message cm-chat-message-received">
+    <p-card styleClass="m-2">
+      <p class="m-0">{{text}}</p>
+    </p-card>
+  </div>
+  

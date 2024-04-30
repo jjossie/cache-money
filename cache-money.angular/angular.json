@@ -41,6 +41,8 @@
               "node_modules/primeng/resources/primeng.min.css",
               "node_modules/@nebular/theme/styles/prebuilt/default.css",
               "src/styles.scss"
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/@nebular/theme/styles/prebuilt/default.css"
             ],
             "scripts": []
           },

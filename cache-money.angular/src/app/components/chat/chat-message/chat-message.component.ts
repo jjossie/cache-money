@@ -11,6 +11,8 @@ import { CardModule } from 'primeng/card';
 export class ChatMessageComponent {
   @Input()
   text: string = "";
+  @Input()
+  sent: boolean = false;
 
   constructor() {
     

@@ -1,6 +1,7 @@
 <p>chat-conversation works!</p>
 <div class="cm-chat-conversation flex flex-column p-4">
-    <app-chat-message text="bruh"></app-chat-message>
-    <app-chat-message text="aye"></app-chat-message>
-    <app-chat-message text="what"></app-chat-message>
+    <app-chat-message *ngFor="let message of messages" 
+    [text]="message.text"
+    [sent]="message.sent"
+    ></app-chat-message>
 </div>

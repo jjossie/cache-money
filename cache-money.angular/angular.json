@@ -17,8 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "~/Downloads/angular/dist/cache-money.angular",
-            "main": "src/main.ts",
+            "outputPath": "dist/cache-money.angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -31,7 +30,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": []
           },
@@ -100,9 +101,6 @@
     }
   },
   "cli": {
-    "analytics": false,
-    "cache": {
-      "path": "D:/AS2-e268d08adc624df7/Downloads/ngcache"
-    }
+    "analytics": false
   }
 }

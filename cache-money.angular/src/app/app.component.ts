@@ -8,5 +8,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cache-money.angular';
-  content="Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
 }

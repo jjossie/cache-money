@@ -1,10 +1,20 @@
-.nudge-container{
+.nudge-card{
     background:#f9f5f5;
-    width: 15%;
-    height: 30%;
+    width:90%;
+    height:50%;
     font-size: 1rem;
-    padding : 1%;
+    padding : 3%;
     border-radius: 10%;
-    float:right;
-    margin-right : 30px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+    
+}
+.nudge-container{
+    display:block;
+    position:fixed;
+    width:20%;
+    right : 0;
+    //float:right;
+
+    
 }

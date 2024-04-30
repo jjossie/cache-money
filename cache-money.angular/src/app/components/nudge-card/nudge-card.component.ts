@@ -11,5 +11,6 @@ import { CardModule } from 'primeng/card';
 })
 export class NudgeCardComponent {
   @Input() nudgeContent : string = '';
+  @Input() nudges : number = 1;
 
 }

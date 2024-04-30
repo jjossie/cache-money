@@ -1,0 +1,17 @@
+<h2>Transactions</h2>
+<p-table [value]="transactions" [columns]="cols">
+    <ng-template pTemplate="header">
+      <tr>
+        <th *ngFor="let col of cols"> {{ col.header }} </th>
+      </tr>
+    </ng-template>
+  
+    <ng-template pTemplate="body" let-transaction>
+      <tr>
+        <td>{{ transaction.name }}</td>
+        <td>{{ transaction.amount | currency }}</td> <td [ngClass]="{'deposit': transaction.type === 'deposit', 'withdrawal': transaction.type === 'withdrawal'}">
+          {{ transaction.type }}
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>

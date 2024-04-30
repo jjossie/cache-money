@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "main": "src/main.ts",
             "outputPath": "dist/cache-money.angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -97,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

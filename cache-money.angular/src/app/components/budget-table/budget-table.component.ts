@@ -7,8 +7,6 @@ import { Expense } from '../../models/expense';
 
 @Component({
   selector: 'app-budget-table',
-  standalone: true,
-  imports: [CommonModule, TableModule],
   templateUrl: './budget-table.component.html',
   styleUrl: './budget-table.component.scss'
 })

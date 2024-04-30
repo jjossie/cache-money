@@ -1,0 +1,28 @@
+.cm-chat-message {
+    display: block;
+    margin-bottom: 2em;
+}       
+
+.cm-chat-message-sent {
+    align-self: flex-end;
+    text-align: right;
+    margin-right: 0;
+}
+
+.cm-chat-message-received {
+    text-align: left;
+    margin-left: 0;
+    & p-card {
+        background-color: grey;
+    }
+}
+
+::ng-deep{
+    .p-card-content {
+        padding: 0;
+    }
+    .p-card-body {
+        padding: 0.75rem;
+    }
+
+} 

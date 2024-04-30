@@ -5,8 +5,6 @@ import { Account } from '../../models/account';
 
 @Component({
   selector: 'app-accounts-table',
-  standalone: true,
-  imports: [TableModule, CommonModule],
   templateUrl: './accounts-table.component.html',
   styleUrl: './accounts-table.component.scss'
 })

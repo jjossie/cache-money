@@ -6,8 +6,8 @@ import { NavTabsComponent } from './components/nav-tabs/nav-tabs.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, ButtonModule, PanelModule, NavTabsComponent],
+  // standalone: true,
+  // imports: [RouterOutlet, ButtonModule, PanelModule, NavTabsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

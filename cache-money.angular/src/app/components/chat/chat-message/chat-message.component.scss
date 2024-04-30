@@ -4,13 +4,13 @@
     width: min-content;
 }
 
-// .cm-chat-message-sent {
-//     align-self: flex-end;
-// }
+.cm-chat-message-sent {
+    align-self: flex-end;
+}
 
-// .cm-chat-message-received {
-//     align-self: flex-start;
-// }
+.cm-chat-message-received {
+    align-self: flex-start;
+}
 
 ::ng-deep{
     .p-card-content {

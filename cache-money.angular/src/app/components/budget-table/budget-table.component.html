@@ -1,0 +1,14 @@
+<h2>Budget</h2>
+<p-table [value]="expenses" [columns]="cols">
+    <ng-template pTemplate="header">
+      <tr>
+        <th *ngFor="let col of cols"> {{ col.header }} </th>
+      </tr>
+    </ng-template>
+  
+    <ng-template pTemplate="body" let-expense>
+      <tr>
+        <td *ngFor="let col of cols"> {{ expense[col.field] }} </td>
+      </tr>
+    </ng-template>
+  </p-table>

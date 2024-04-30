@@ -6,10 +6,8 @@ import { NebularChatConversationComponent } from '../../components/chat/nebular-
 
 @Component({
     selector: 'app-budget',
-    // standalone: true,
     templateUrl: './budget.component.html',
     styleUrl: './budget.component.scss',
-    // imports: [BudgetTableComponent]
 })
 export class BudgetComponent {
   expenseList: Expense[] = [

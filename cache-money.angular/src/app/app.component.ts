@@ -9,8 +9,6 @@ import { BudgetTableComponent } from './components/budget-table/budget-table.com
 
 @Component({
   selector: 'app-root',
-  // standalone: true,
-  // imports: [RouterOutlet, ButtonModule, PanelModule, NavTabsComponent, TableComponent, AccountsTableComponent, BudgetTableComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

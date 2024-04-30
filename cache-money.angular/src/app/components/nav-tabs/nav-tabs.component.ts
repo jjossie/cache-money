@@ -4,8 +4,6 @@ import { TabMenuModule } from 'primeng/tabmenu';
 
 @Component({
   selector: 'app-nav-tabs',
-  // standalone: true,
-  // imports: [TabMenuModule],
   templateUrl: './nav-tabs.component.html',
   styleUrl: './nav-tabs.component.scss',
 })

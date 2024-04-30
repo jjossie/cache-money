@@ -3,8 +3,6 @@ import { CardModule } from 'primeng/card';
 
 @Component({
   selector: 'app-chat-message',
-  // standalone: true,
-  // imports: [CardModule],
   templateUrl: './chat-message.component.html',
   styleUrl: './chat-message.component.scss',
 })

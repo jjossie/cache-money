@@ -4,8 +4,6 @@ import { ChatMessage } from '../../../models/chat/chat';
 
 @Component({
   selector: 'app-chat-conversation',
-  // standalone: true,
-  // imports: [ChatMessageComponent],
   templateUrl: './chat-conversation.component.html',
   styleUrl: './chat-conversation.component.scss'
 })

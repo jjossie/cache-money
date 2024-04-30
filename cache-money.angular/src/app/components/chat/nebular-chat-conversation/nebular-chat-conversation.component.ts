@@ -2,9 +2,7 @@ import { Component } from '@angular/core';
 import { NbChatModule, NbFocusMonitor, NbStatusService } from '@nebular/theme';
 
 @Component({
-  // standalone: true,
   selector: 'app-nebular-chat-conversation',
-  // imports: [ NbChatModule ],
   providers: [ NbStatusService, NbFocusMonitor ],
   // styles: [`
   //   ::ng-deep nb-layout-column {

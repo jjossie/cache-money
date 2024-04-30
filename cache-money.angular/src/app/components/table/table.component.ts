@@ -7,8 +7,6 @@ import { Transaction } from '../../models/transaction';
 
 @Component({
   selector: 'app-table',
-  // standalone: true,
-  // imports: [ TableModule, CommonModule ],
   templateUrl: './table.component.html',
   styleUrl: './table.component.scss'
 })

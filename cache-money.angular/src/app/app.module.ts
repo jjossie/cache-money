@@ -21,6 +21,8 @@ import { BudgetTableComponent } from "./components/budget-table/budget-table.com
 import { TableModule } from 'primeng/table';
 import { TableComponent } from './components/table/table.component';
 import { AccountsTableComponent } from './components/accounts-table/accounts-table.component';
+import { NudgeCardComponent } from './components/nudge-card/nudge-card.component';
+import { ChatFooterComponent } from './components/chat-footer/chat-footer.component';
 
 /* the AppModule class with the @NgModule decorator */
 @NgModule({
@@ -38,7 +40,9 @@ import { AccountsTableComponent } from './components/accounts-table/accounts-tab
         NebularChatConversationComponent,
         TableComponent,
         BudgetTableComponent,
-        AccountsTableComponent
+        AccountsTableComponent,
+        NudgeCardComponent,
+        ChatFooterComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],

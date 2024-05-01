@@ -14,7 +14,6 @@ import { ChatConversationComponent } from './components/chat/chat-conversation/c
 import { NebularChatConversationComponent } from './components/chat/nebular-chat-conversation/nebular-chat-conversation.component';
 import { ChatMessageComponent } from './components/chat/chat-message/chat-message.component';
 import { TransactionsComponent } from './pages/transactions/transactions.component';
-import { AccountsComponent } from './pages/accounts/accounts.component';
 import { BudgetComponent } from './pages/budget/budget.component';
 import { NgFor, NgForOf } from '@angular/common';
 import { BudgetTableComponent } from "./components/budget-table/budget-table.component";
@@ -25,6 +24,7 @@ import { AccountsTableComponent } from './components/accounts-table/accounts-tab
 import { NudgeCardComponent } from './components/nudge-card/nudge-card.component';
 import { ChatFooterComponent } from './components/chat-footer/chat-footer.component';
 import { HistoricalBarChartComponent } from './components/historical-bar-chart/historical-bar-chart.component';
+import { SpendingBarChartComponent } from './components/spending-bar-chart/spending-bar-chart.component';
 
 /* the AppModule class with the @NgModule decorator */
 @NgModule({
@@ -33,7 +33,6 @@ import { HistoricalBarChartComponent } from './components/historical-bar-chart/h
         AppComponent,
         // Pages
         TransactionsComponent,
-        AccountsComponent,
         BudgetComponent,
         // Components
         NavTabsComponent,
@@ -46,6 +45,7 @@ import { HistoricalBarChartComponent } from './components/historical-bar-chart/h
         NudgeCardComponent,
         ChatFooterComponent,
         HistoricalBarChartComponent,
+        SpendingBarChartComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],

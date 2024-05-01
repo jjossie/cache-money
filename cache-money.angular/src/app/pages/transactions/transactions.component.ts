@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { TableComponent } from "../../components/table/table.component";
 import { Transaction } from '../../models/transaction';
+import { Account } from '../../models/account';
 import { CacheMoneyApiService } from '../../services/cache-money-api.service';
 import { Observable } from 'rxjs';
 
@@ -37,4 +37,21 @@ export class TransactionsComponent {
           ;
         });
       }
+    accounts: Account[] = [
+        {
+          name: "Checking Account",
+          value: 1000.00,
+          type: "Asset"
+        },
+        {
+          name: "Savings Account",
+          value: 5000.00,
+          type: "Asset"
+        },
+        {
+          name: "Credit Card",
+          value: -100.00,  // Negative value for liability
+          type: "Liability"
+        }
+      ];
 }

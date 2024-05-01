@@ -17,6 +17,7 @@ export class TableComponent {
     { field: 'name', header: 'Name' },
     { field: 'amount', header: 'Amount' },
     { field: 'category', header: 'Category' },
-    { field: 'account', header: 'Account' }
+    { field: 'account', header: 'Account' },
+    { field: 'date', header: 'Date' }
   ];
 }

@@ -14,16 +14,12 @@ export class NavTabsComponent implements OnInit{
   constructor() {
     this.items = [
       {
-        routerLink: "transactions",
-        label: "Home",
-      },
-      {
-        routerLink: "accounts",
-        label: "Accounts",
-      },
-      {
         routerLink: "budget",
         label: "Budget",
+      },
+      {
+        routerLink: "transactions",
+        label: "Transactions",
       },
     ];
   }

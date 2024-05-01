@@ -14,7 +14,6 @@ import { ChatConversationComponent } from './components/chat/chat-conversation/c
 import { NebularChatConversationComponent } from './components/chat/nebular-chat-conversation/nebular-chat-conversation.component';
 import { ChatMessageComponent } from './components/chat/chat-message/chat-message.component';
 import { TransactionsComponent } from './pages/transactions/transactions.component';
-import { AccountsComponent } from './pages/accounts/accounts.component';
 import { BudgetComponent } from './pages/budget/budget.component';
 import { NgFor, NgForOf } from '@angular/common';
 import { BudgetTableComponent } from "./components/budget-table/budget-table.component";
@@ -35,7 +34,6 @@ import { FormsModule } from '@angular/forms';
         AppComponent,
         // Pages
         TransactionsComponent,
-        AccountsComponent,
         BudgetComponent,
         // Components
         NavTabsComponent,

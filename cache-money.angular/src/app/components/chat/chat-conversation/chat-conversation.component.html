@@ -1,8 +1,7 @@
-<p>chat-conversation works!</p>
 <div class="cm-chat-conversation flex flex-column p-4">
     <app-chat-message *ngFor="let message of messages" 
     [text]="message.text"
     [sent]="message.sent"
     ></app-chat-message>
-    <app-chat-input></app-chat-input>
+    <app-chat-input (newMessageEvent)="onNewMessage($event)"></app-chat-input>
 </div>

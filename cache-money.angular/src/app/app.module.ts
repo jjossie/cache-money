@@ -26,7 +26,8 @@ import { NudgeCardComponent } from './components/nudge-card/nudge-card.component
 import { ChatFooterComponent } from './components/chat-footer/chat-footer.component';
 import { HistoricalBarChartComponent } from './components/historical-bar-chart/historical-bar-chart.component';
 import { SpendingBarChartComponent } from './components/spending-bar-chart/spending-bar-chart.component';
-
+import { ChatInputComponent } from './components/chat/chat-input/chat-input.component';
+import { FormsModule } from '@angular/forms';
 /* the AppModule class with the @NgModule decorator */
 @NgModule({
     declarations: [
@@ -48,6 +49,7 @@ import { SpendingBarChartComponent } from './components/spending-bar-chart/spend
         ChatFooterComponent,
         HistoricalBarChartComponent,
         SpendingBarChartComponent,
+        ChatInputComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -67,7 +69,8 @@ import { SpendingBarChartComponent } from './components/spending-bar-chart/spend
         CardModule,
         ButtonModule,
         TableModule,
-        ChartModule
+        ChartModule,
+        FormsModule
     ]
 })
 export class AppModule {}

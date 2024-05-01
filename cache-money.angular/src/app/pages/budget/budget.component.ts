@@ -14,9 +14,9 @@ export class BudgetComponent {
   // Sample Data
   // spendCategories = ['Food','Transport','Housing', 'Entertainment']
   spendCategories! : string[];
-  // actualSpend = [288,123,462,172]
-  actualSpend!: number[];
-  suggestedSpend = [200,200,300,200,300]
+  actualSpend = [288,123,250,172]
+  // actualSpend!: number[];
+  suggestedSpend = [200,50,200,200]
   expenseList: Expense[] = [
     {
     name: "Rent",
@@ -43,7 +43,7 @@ constructor(private api: CacheMoneyApiService, private cd: ChangeDetectorRef) {
       console.log(Object.keys(averageSpending));
       console.log(Object.values(averageSpending));
       this.spendCategories = Object.keys(averageSpending);
-      this.actualSpend = Object.values(averageSpending).map(item => parseFloat(item));
+      // this.actualSpend = Object.values(averageSpending).map(item => parseFloat(item));
 
       this.cd.detectChanges();
     })

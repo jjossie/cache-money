@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { TableComponent } from "../../components/table/table.component";
 import { Transaction } from '../../models/transaction';
+import { Account } from '../../models/account';
 
 @Component({
     selector: 'app-transactions',
@@ -14,5 +14,22 @@ export class TransactionsComponent {
         { name: "Groceries", amount: 150, category: "Expense", account: "Checking" },
         { name: "Investment return", amount: 50, category: "Income", account: "Savings" },
         { name: "Movie ticket", amount: 15, category: "Entertainment", account: "Credit card" },
+      ];
+    accounts: Account[] = [
+        {
+          name: "Checking Account",
+          value: 1000.00,
+          type: "Asset"
+        },
+        {
+          name: "Savings Account",
+          value: 5000.00,
+          type: "Asset"
+        },
+        {
+          name: "Credit Card",
+          value: -100.00,  // Negative value for liability
+          type: "Liability"
+        }
       ];
 }

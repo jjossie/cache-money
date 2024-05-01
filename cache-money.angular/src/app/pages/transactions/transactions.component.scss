@@ -1,0 +1,27 @@
+.child1 {
+    display: inline-block;
+    // border: 1px solid red;
+    width : 75%;
+    // padding: 1.5rem 1.5rem;
+    //vertical-align: middle;
+  }
+
+  .child2 {
+    padding-top: 40px;
+    width : 25%;
+    display: inline-block;
+    // border: 1px solid red;
+    // padding: 1rem 1rem;
+    vertical-align: middle;
+    float:right;
+  }
+
+.nudge-container{
+    display:block;
+    position:fixed;
+    width:20%;
+    right : 0;
+    //float:right;
+
+    
+}

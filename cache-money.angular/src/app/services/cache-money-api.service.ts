@@ -17,7 +17,7 @@ export class CacheMoneyApiService {
   constructor() { }
 
   sendChatMessage(text: string, userID: string): Observable<GenerateChatResponse> {
-    return from(axios.get(`${baseUrl}/generate_chat_response`, {
+    return from(axios.get(`${baseUrl}generate_chat_response`, {
       params: { text, userID }
     })).pipe(
       map((response: AxiosResponse<GenerateChatResponse>) => response.data),
@@ -26,7 +26,7 @@ export class CacheMoneyApiService {
   }
 
   getGeneratedBudget(userID: string): Observable<GenerateBudgetResponse> {
-    return from(axios.get(`${baseUrl}/generate_budget`, {
+    return from(axios.get(`${baseUrl}generate_budget`, {
       params: { userID }
     })).pipe(
       map((response: AxiosResponse<GenerateBudgetResponse>) => response.data)
@@ -34,10 +34,12 @@ export class CacheMoneyApiService {
   }
   
   getCurrentSpending(userID: string): Observable<CurrentSpendingResponse> {
-    return from(axios.get(`${baseUrl}/get_current_spending`, {
+    return from(axios.get(`${baseUrl}current_spending`, {
       params: { userID }
     })).pipe(
       map((response: AxiosResponse<CurrentSpendingResponse>) => response.data)
     );
   }
 }
+
+

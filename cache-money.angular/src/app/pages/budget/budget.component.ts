@@ -10,6 +10,10 @@ import { NebularChatConversationComponent } from '../../components/chat/nebular-
     styleUrl: './budget.component.scss',
 })
 export class BudgetComponent {
+  // Sample Data
+  categories = ['Food','Transport','Housing', 'Entertainment']
+  actualSpend = [180,280,100,320,330]
+  suggestedSpend = [200,200,300,200,300]
   expenseList: Expense[] = [
     {
     name: "Rent",

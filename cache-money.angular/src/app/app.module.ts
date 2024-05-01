@@ -19,10 +19,12 @@ import { BudgetComponent } from './pages/budget/budget.component';
 import { NgFor, NgForOf } from '@angular/common';
 import { BudgetTableComponent } from "./components/budget-table/budget-table.component";
 import { TableModule } from 'primeng/table';
+import { ChartModule } from 'primeng/chart';
 import { TableComponent } from './components/table/table.component';
 import { AccountsTableComponent } from './components/accounts-table/accounts-table.component';
 import { NudgeCardComponent } from './components/nudge-card/nudge-card.component';
 import { ChatFooterComponent } from './components/chat-footer/chat-footer.component';
+import { HistoricalBarChartComponent } from './components/historical-bar-chart/historical-bar-chart.component';
 
 /* the AppModule class with the @NgModule decorator */
 @NgModule({
@@ -43,6 +45,7 @@ import { ChatFooterComponent } from './components/chat-footer/chat-footer.compon
         AccountsTableComponent,
         NudgeCardComponent,
         ChatFooterComponent,
+        HistoricalBarChartComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -61,7 +64,8 @@ import { ChatFooterComponent } from './components/chat-footer/chat-footer.compon
         NbChatModule,
         CardModule,
         ButtonModule,
-        TableModule
+        TableModule,
+        ChartModule
     ]
 })
 export class AppModule {}

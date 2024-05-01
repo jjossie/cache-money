@@ -1,0 +1,16 @@
+div{
+    float:right;
+    justify-content: space-between;
+}
+
+textarea{
+    display: inline-block;
+    border: solid 1px black;
+    // min-width: 100%; 
+    max-width: 800px;
+    flex-grow:10;
+}
+
+i{
+    margin-left: 5px;
+}

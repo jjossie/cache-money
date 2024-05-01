@@ -3,5 +3,6 @@ export interface Transaction {
     amount: number;
     category: string;
     account: string;
+    date?: string;
   }
   

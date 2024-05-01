@@ -9,14 +9,20 @@ export type CurrentSpendingResponse = {
         amount: number;
         category: string;
         account: string;
+        date: string;
     }[];
     categories: {
-        name: string;
-        currentAmount: number;
-        budgetAmount: number;
+        // name: string;
+        // currentAmount: number;
+        // budgetAmount: number;
+        [category: string]: {
+            dollar_amount: number;
+            amount_trans: number;
+            budget: number;
+        }
     }[];
     total: {
-        currentAmount: number;
-        budgetAmount: number;
+        total_spend: number;
+        total_budget: number;
     };
 }

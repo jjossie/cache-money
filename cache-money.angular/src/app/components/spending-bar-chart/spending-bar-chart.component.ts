@@ -7,8 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class SpendingBarChartComponent {
 
-  //spendCategories: string[] = ['Housing','Transportation','Groceries','Entertainment']
-
   @Input() actualSpend!: number[];
   @Input() suggestedSpend!: number[];
   @Input() spendCategories !: string[];

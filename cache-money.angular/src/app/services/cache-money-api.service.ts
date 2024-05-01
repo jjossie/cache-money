@@ -4,6 +4,7 @@ import { Observable, from, map, of } from 'rxjs';
 import { GenerateChatResponse } from '../models/responses/generate-chat-response';
 import { GenerateBudgetResponse } from '../models/responses/generate-budget';
 import { CurrentSpendingResponse } from '../models/responses/current-spending';
+import { AverageSpendingResponse } from '../models/responses/average-spending';
 
 
 const baseUrl = 'https://cache-money-api.onrender.com/'
@@ -38,6 +39,13 @@ export class CacheMoneyApiService {
       params: { userID }
     })).pipe(
       map((response: AxiosResponse<CurrentSpendingResponse>) => response.data)
+    );
+  }
+  getAverageSpending(userID: string): Observable<AverageSpendingResponse> {
+    return from(axios.get(`${baseUrl}average_spending`, {
+      params: { userID }
+    })).pipe(
+      map((response: AxiosResponse<AverageSpendingResponse>) => response.data)
     );
   }
 }

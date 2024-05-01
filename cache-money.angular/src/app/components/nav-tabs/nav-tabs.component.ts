@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
-import { TabMenuModule } from 'primeng/tabmenu';
 
 @Component({
   selector: 'app-nav-tabs',
@@ -15,11 +14,11 @@ export class NavTabsComponent implements OnInit{
     this.items = [
       {
         routerLink: "budget",
-        label: "Budget",
+        label: "Budget Assistant",
       },
       {
         routerLink: "transactions",
-        label: "Transactions",
+        label: "Spending",
       },
     ];
   }

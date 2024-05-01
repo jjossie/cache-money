@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 import { BudgetTableComponent } from "../../components/budget-table/budget-table.component";
 import { Expense } from '../../models/expense';
 import { ChatConversationComponent } from '../../components/chat/chat-conversation/chat-conversation.component';
 import { NebularChatConversationComponent } from '../../components/chat/nebular-chat-conversation/nebular-chat-conversation.component'
+import { CacheMoneyApiService } from '../../services/cache-money-api.service';
 
 @Component({
     selector: 'app-budget',
@@ -11,8 +12,10 @@ import { NebularChatConversationComponent } from '../../components/chat/nebular-
 })
 export class BudgetComponent {
   // Sample Data
-  categories = ['Food','Transport','Housing', 'Entertainment']
-  actualSpend = [180,280,100,320,330]
+  // spendCategories = ['Food','Transport','Housing', 'Entertainment']
+  spendCategories! : string[];
+  // actualSpend = [288,123,462,172]
+  actualSpend!: number[];
   suggestedSpend = [200,200,300,200,300]
   expenseList: Expense[] = [
     {
@@ -20,16 +23,29 @@ export class BudgetComponent {
     value: 1200
   },
     {
-    name: "yo Momma",
-    value: 1203333330
+    name: "Gas",
+    value: 300
   },
     {
     name: "food",
-    value: 12000
+    value: 400
   },
     {
-    name: "yeezys",
-    value: 100
+    name: "Clothing",
+    value: 500
   },
 ];
+
+constructor(private api: CacheMoneyApiService, private cd: ChangeDetectorRef) {
+  this.api.getAverageSpending("Doug").subscribe(averageSpending =>
+    {
+      console.log(averageSpending);
+      console.log(Object.keys(averageSpending));
+      console.log(Object.values(averageSpending));
+      this.spendCategories = Object.keys(averageSpending);
+      this.actualSpend = Object.values(averageSpending).map(item => parseFloat(item));
+
+      this.cd.detectChanges();
+    })
+}
 }

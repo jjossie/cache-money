@@ -1,6 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { TableModule } from 'primeng/table';
 import { Transaction } from '../../models/transaction';
 
 
@@ -18,6 +16,7 @@ export class TableComponent {
   cols: any[] = [
     { field: 'name', header: 'Name' },
     { field: 'amount', header: 'Amount' },
-    { field: 'type', header: 'Type' }
+    { field: 'category', header: 'Category' },
+    { field: 'account', header: 'Account' }
   ];
 }
